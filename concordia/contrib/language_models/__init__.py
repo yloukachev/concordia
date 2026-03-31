@@ -22,6 +22,8 @@ from concordia.language_model import no_language_model
 
 
 _REGISTRY = types.MappingProxyType({
+    'anthropic': 'anthropic.claude_model.ClaudeLanguageModel',
+    'claude_code': 'anthropic.claude_code_model.ClaudeCodeLanguageModel',
     'amazon_bedrock': 'amazon.amazon_bedrock_model.AmazonBedrockLanguageModel',
     'gemini': 'google.gemini_model.GeminiModel',
     'gemini_vision': 'google.gemini_model_vision.GeminiModelVision',
